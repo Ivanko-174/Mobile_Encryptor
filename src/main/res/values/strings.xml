@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cipher</string>
+
+    <string-array name="encryption_methods">
+        <item>Reverse</item>
+        <item>Caesar</item>
+        <item>Vigenère</item>
+        <item>Atbash</item>
+        <item>Substitution</item>
+        <item>Polybius square</item>
+    </string-array>
+
+    <string-array name="decryption_methods">
+        <item>Reverse</item>
+        <item>Caesar</item>
+        <item>Vigenère</item>
+        <item>Atbash</item>
+        <item>Substitution</item>
+        <item>Polybius square</item>
+    </string-array>
+</resources>

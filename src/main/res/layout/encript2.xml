@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/crypto_light"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CryptoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter message"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CryptoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter key (if needed)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CryptoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAlphabet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Custom alphabet (optional)"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cipher Method"
+                    android:textColor="@color/crypto_dark"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/crypto_medium"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnEncrypt"
+            style="@style/CryptoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encrypt"
+            android:layout_marginBottom="16dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Result will appear here"
+                android:textColor="@color/crypto_text_dark"
+                android:background="@color/crypto_result_bg"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnCopy"
+            style="@style/CryptoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy Result"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/CryptoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Main"/>
+
+    </LinearLayout>
+</ScrollView>
