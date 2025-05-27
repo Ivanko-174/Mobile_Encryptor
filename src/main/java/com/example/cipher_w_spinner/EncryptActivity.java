@@ -178,8 +178,8 @@ public class EncryptActivity extends AppCompatActivity {
             if (index != -1) {
                 char keyChar = key.charAt(i % key.length());
                 int keyIndex = alphabet.indexOf(keyChar);
-                int newIndex = (index + 1 + keyIndex) % alphabet.length();
-                char newChar = alphabet.charAt(newIndex);
+                int newIndex = (index + 1 + keyIndex) % alphabet.length(); //Если значение превышает кол-во символов в алфавите
+                char newChar = alphabet.charAt(newIndex);                   //оно делится с остатком
                 result.append(Character.isUpperCase(c) ? Character.toUpperCase(newChar) : newChar);
             } else {
                 result.append(c);
